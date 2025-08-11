@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Basic Calculator"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@color/grey_green"
+    />
+
+    <TableRow android:gravity="end"
+        android:background="#EEEEEE"
+        >
+        <HorizontalScrollView>
+            <TextView
+                android:id="@+id/txtViewShowDigits"
+                android:layout_height="100dp"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="80dp"
+                android:textAlignment="textEnd"
+                android:scrollHorizontally="true"
+
+                >
+
+            </TextView>
+        </HorizontalScrollView>
+
+
+    </TableRow>
+
+    <TableRow android:gravity="end"
+        android:background="#EEEEEE"
+        >
+        <TextView
+            android:id="@+id/txtViewShowOutput"
+            android:layout_height="80dp"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="60dp"
+            android:textAlignment="textEnd"
+            android:scrollHorizontally="true"
+
+            >
+
+        </TextView>
+
+    </TableRow>
+
+    <TableRow android:layout_marginTop="60dp"
+        >
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="C"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/grey"
+            >
+
+        </Button>
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="U"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/grey">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnPercentage"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="%"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/grey">
+
+        </Button>
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/grey">
+
+        </Button>
+
+    </TableRow>
+    <TableRow android:layout_marginTop="14dp">
+        <Button
+            android:id="@+id/btnSeven"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="7"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/paste">
+
+        </Button>
+        <Button
+            android:id="@+id/btnEight"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="8"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/paste">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnNine"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="9"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/paste">
+
+        </Button>
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="X"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/grey">
+
+        </Button>
+
+    </TableRow>
+    <TableRow android:layout_marginTop="14dp">
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="4"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/paste">
+
+        </Button>
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="5"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/paste">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnSix"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="6"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/paste">
+
+        </Button>
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/grey"
+            >
+
+        </Button>
+
+    </TableRow>
+    <TableRow android:layout_marginTop="14dp">
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/paste">
+
+        </Button>
+        <Button
+            android:id="@+id/btntwo"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="2"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/paste">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnThree"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="3"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/paste">
+
+        </Button>
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/grey">
+
+        </Button>
+
+    </TableRow>
+    <TableRow android:layout_marginTop="14dp">
+        <Button
+            android:id="@+id/btnZero"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/paste">
+
+        </Button>
+        <Button
+            android:id="@+id/btnDoubleZero"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="00"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/paste">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnDot"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="."
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/paste">
+
+        </Button>
+        <Button
+            android:id="@+id/btnEqual"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="="
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/grey">
+
+        </Button>
+
+    </TableRow>
+
+
+
+</TableLayout>
